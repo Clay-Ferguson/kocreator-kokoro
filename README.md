@@ -1,6 +1,6 @@
 # kocreator-kokoro
 
-A **TTS plugin for [KoCreator](../kocreator)**, built on [Kokoro TTS](https://github.com/hexgrad/kokoro) (hexgrad, Apache 2.0). It is self-contained: Kokoro runs in this folder's own uv virtualenv, entirely offline on your local CPU after the one-time setup. This was the engine of the original KoCreator, and it is KoCreator's default plugin.
+A **TTS plugin for [KoCreator](https://github.com/Clay-Ferguson/kocreator)**, built on [Kokoro TTS](https://github.com/hexgrad/kokoro) (hexgrad, Apache 2.0). It is self-contained: Kokoro runs in this folder's own uv virtualenv, entirely offline on your local CPU after the one-time setup. This was the engine of the original KoCreator, and it is KoCreator's default plugin.
 
 It implements KoCreator's batch-only plugin contract (see "Writing a TTS Plugin" in KoCreator's README): `tts.sh speak <jobs.tsv>` loads Kokoro **once** and then speaks every narration in the batch, printing `KOCREATOR_DONE <n>` after each one. There is no single-file mode; one clip is a batch of one.
 
